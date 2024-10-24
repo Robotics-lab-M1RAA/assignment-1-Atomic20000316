@@ -1,0 +1,64 @@
+1. 
+a.    /rosout
+b.  to record and log messages from nodes in the Robot Operating System.
+c. /rosout
+	/rosout_agg
+	
+	
+d.	Subscriptions: 
+	 * /rosout [unknown type]
+e.  Node [/rosout]
+	Publications: 
+	 * /rosout_agg [rosgraph_msgs/Log]
+
+
+f.	Services: 
+	 * /rosout/get_loggers
+	 * /rosout/set_logger_level
+	 
+g. killing /rosout
+	killed
+	 observation: rosenode is not killed.
+	 
+h.Commands:
+	rosnode ping	test connectivity to node
+	rosnode list	list active nodes
+	rosnode info	print information about node
+	rosnode machine	list nodes running on a particular machine or list machines
+	rosnode kill	kill a running node
+	rosnode cleanup	purge registration information of unreachable nodes
+	 
+2
+d. node with same name cannot run concurrently three times, unique node name need to run it three 	times concurrently. 
+
+3.
+b.the publisher node publishes a message hello i am rahul to the subscriber node named RAA24_subnode.
+4
+a.  /CET
+	/M1RAA_24_26
+	/rahul_15787_1729756809261
+	/rosout
+
+b. * topic: /rosout
+    * to: /rahul_4769_1729760200436 (http://rahul-Aspire-A715-42G:41431/)
+    * direction: inbound (41900 - rahul-Aspire-A715-42G:45659) [13]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /M1RAA_24_26 (http://rahul-Aspire-A715-42G:36739/)
+    * direction: inbound (56820 - rahul-Aspire-A715-42G:36543) [15]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /CET (http://rahul-Aspire-A715-42G:37233/)
+    * direction: inbound (41312 - rahul-Aspire-A715-42G:33981) [16]
+    * transport: TCPROS
+
+c.  The rosout node in ROS handles centralized logging by collecting 
+	log messages from all nodes and publishing them to the /rosout topic
+	for real-time monitoring and debugging.
+	
+d. [FATAL] [1729760604.542674]: unable to register service [/M1RAA 2024/get_loggers] with master: ERROR: parameter [service] contains illegal chars
+   [FATAL] [1729760604.545998]: unable to register service [/M1RAA 2024/set_logger_level] with master: ERROR: parameter [service] contains illegal chars	
+	
+ 
+	 
+	 
